@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: gray;
+    padding: 3rem;
+    position: relative;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.tree span {
+
+    border-bottom: 1px solid; /*Css Magic. not really just adds border */
+    border-left: 1px solid; /*Css Magic*/
+    height: 1.5rem; /*Variable height of File tree*/
+    width: 3rem; /*Variable Length of File tree*/
+    display: inline-block; /*Css Magic*/
+    margin-bottom: 0.3rem;/*Moves File Structure down*/
+    margin-left: 2rem; /*Pushes File Structure over to the left*/
+}
+li {
+    cursor: pointer;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+#root-handle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#c-handle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.explanation {
+   
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 30rem;
+    left: 10rem;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    gap: 2rem;
+
+    a {
+        color: blue;
+    }
+}
+
+
+
